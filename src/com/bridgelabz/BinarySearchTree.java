@@ -33,6 +33,7 @@ public class BinarySearchTree <K extends Comparable<K>> {
         }
     }
 
+    /* This Method to display the Binary Search Tree */
     public void print(Node<K> node) {
         if (node == null) {
             System.out.println("Tree is empty");
@@ -42,7 +43,6 @@ public class BinarySearchTree <K extends Comparable<K>> {
             System.out.print(node.key + " ");
             if (node.right != null)
                 print(node.right);
-
         }
     }
 }
